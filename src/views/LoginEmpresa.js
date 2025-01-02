@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/LoginForm.css';
 import sideBanner from '../assets/images/antelope.jpg';
+import LogoImage from "../assets/images/Logo.jpg";
 
 const Login = () => {
     const [username, setUsername] = useState('');
@@ -34,7 +35,13 @@ const Login = () => {
     return (
         <div className="login-container">
             <div className="login-left">
-                <img src="/path/to/logo.png" alt="Logo" />
+            <div className="logo-image">
+          <img
+            src={LogoImage}
+            alt="Imagen descriptiva"
+            className="logo-img-foot"
+          />
+        </div>
                 <h1>Hola, te damos la bienvenida a Banca Empresas</h1>
                 <p>Ingresa a tu Banca en línea</p>
                 <form className="login-form" onSubmit={handleSubmit}>

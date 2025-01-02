@@ -13,6 +13,8 @@ import TarjetasCreditoBloqueos from './views/TarjetasCreditoBloqueos';
 import TarjetasCreditoCupos from './views/TarjetasCreditoCupos';
 import Password from './views/Password';
 import Register from './views/Register';
+import '@fortawesome/fontawesome-free/css/all.min.css'; //iconos
+
 
 const App = () => {
   return (

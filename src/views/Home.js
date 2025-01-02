@@ -5,6 +5,10 @@ import "../styles/Home.css";
 import HomeBankImage from "../assets/images/HomeBank.jpg";
 import HouseImage from "../assets/images/TuCasaPropia.jpg";
 import LogoImage from "../assets/images/Logo.jpg";
+import HipotecasImage from "../assets/images/Hipotecas.jpg";
+import TarjetasCreditoImage from "../assets/images/TarjetasCredito.jpg";
+import AperturaCuentaImage from "../assets/images/AperturaCuenta.jpg";
+import TipoInteresImage from "../assets/images/TipoInteres.jpg";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -13,11 +17,7 @@ const Home = () => {
       {/* Navbar */}
       <nav className="navbar">
         <div className="logo-image">
-          <img
-            src={LogoImage}
-            alt="Imagen descriptiva"
-            className="logo-img"
-          />
+          <img src={LogoImage} alt="Imagen descriptiva" className="logo-img" />
         </div>
         <ul className="nav-links">
           <li className="nav-item">
@@ -130,19 +130,61 @@ const Home = () => {
 
       {/* Tarjetas */}
       <section className="cards">
-        {[
-          "Hipotecas",
-          "Apertura Cuentas",
-          "Tarjetas de crédito",
-          "Tipos de Interés",
-        ].map((title, index) => (
-          <div className="card" key={index}>
-            <div className="card-image-placeholder"></div>
-            <h3>{title}</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button className="card-btn">Aprender más →</button>
+        {/* Tarjeta 1 */}
+        <div className="card">
+          <div className="header-image">
+            <img
+              src={HipotecasImage}
+              alt="Imagen descriptiva"
+              className="header-img"
+            />
           </div>
-        ))}
+          <h3>Hipotecas</h3>
+          <p>Encuentra la mejor hipoteca que se adapte a tus necesidades.</p>
+          <button className="card-btn">Aprender más →</button>
+        </div>
+
+        {/* Tarjeta 2 */}
+        <div className="card">
+        <div className="header-image">
+            <img
+              src={AperturaCuentaImage}
+              alt="Imagen descriptiva"
+              className="header-img"
+            />
+          </div>
+          <h3>Apertura Cuentas</h3>
+          <p>Abre tu cuenta en minutos con procesos rápidos y sencillos.</p>
+          <button className="card-btn">Aprender más →</button>
+        </div>
+
+        {/* Tarjeta 3 */}
+        <div className="card">
+        <div className="header-image">
+            <img
+              src={TarjetasCreditoImage}
+              alt="Imagen descriptiva"
+              className="header-img"
+            />
+          </div>
+          <h3>Tarjetas de crédito</h3>
+          <p>Descubre nuestras tarjetas con beneficios exclusivos.</p>
+          <button className="card-btn">Aprender más →</button>
+        </div>
+
+        {/* Tarjeta 4 */}
+        <div className="card">
+        <div className="header-image">
+            <img
+              src={TipoInteresImage}
+              alt="Imagen descriptiva"
+              className="header-img"
+            />
+          </div>
+          <h3>Tipos de Interés</h3>
+          <p>Consulta los tipos de interés más competitivos del mercado.</p>
+          <button className="card-btn">Aprender más →</button>
+        </div>
       </section>
 
       {/* Sección destacada */}
@@ -169,12 +211,12 @@ const Home = () => {
         <div className="footer-top">
           {/* Logo */}
           <div className="logo-image">
-          <img
-            src={LogoImage}
-            alt="Imagen descriptiva"
-            className="logo-img-foot"
-          />
-        </div>
+            <img
+              src={LogoImage}
+              alt="Imagen descriptiva"
+              className="logo-img-foot"
+            />
+          </div>
 
           {/* Subtítulos y Links */}
           <div className="footer-column">
@@ -202,18 +244,36 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Parte inferior del Footer con iconos sociales como la cuarta columna */}
-        <div className="footer-bottom">
-          <div className="footer-column">
-            {/* Redes sociales */}
-            <div className="social-icons">
-              {Array(4)
-                .fill(null)
-                .map((_, index) => (
-                  <div className="icon-placeholder" key={index}></div>
-                ))}
-            </div>
-          </div>
+        {/* Redes Sociales */}
+        <div className="social-icons">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-tiktok"></i>
+          </a>
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-twitter"></i>
+          </a>
         </div>
       </footer>
     </div>
