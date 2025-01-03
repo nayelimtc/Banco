@@ -146,7 +146,7 @@ const Home = () => {
 
         {/* Tarjeta 2 */}
         <div className="card">
-        <div className="header-image">
+          <div className="header-image">
             <img
               src={AperturaCuentaImage}
               alt="Imagen descriptiva"
@@ -160,7 +160,7 @@ const Home = () => {
 
         {/* Tarjeta 3 */}
         <div className="card">
-        <div className="header-image">
+          <div className="header-image">
             <img
               src={TarjetasCreditoImage}
               alt="Imagen descriptiva"
@@ -174,7 +174,7 @@ const Home = () => {
 
         {/* Tarjeta 4 */}
         <div className="card">
-        <div className="header-image">
+          <div className="header-image">
             <img
               src={TipoInteresImage}
               alt="Imagen descriptiva"
